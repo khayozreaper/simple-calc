@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Prorata {
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    background: #000000;
+    min-height: 100vh;
+    color: 	#FFFFFF;
+  }
+  
+  h1 {
+    margin-bottom: 50px;
+  }
+  
+  .number-inputs {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    font-size: 80px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+    background: 	#282828;
+    color: #FFFFFF;
+  }
+  
+  input:first-child {
+    margin-right: 20px;
+  }
+  
+  button {
+    padding: 30px 40px;
+    font-size: 30px;
+    border-radius: 20px 40px;
+    background: 	#808080;
+    border: none;
+    margin-bottom: 50px;
+    color: #F5F5F5;
+    cursor: pointer;
+  }
+  
+  h2 {
+    font-size: 150px;
+  }
+  
