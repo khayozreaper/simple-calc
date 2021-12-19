@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Prorata from './Components/Prorata';
+import Discount from './Components/Discount';
 
 function App() {
   return (
     <div className="App">
-      <Prorata/>
+      <Discount />
     </div>
   );
 }
