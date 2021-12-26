@@ -1,11 +1,18 @@
-import './App.css';
-import Discount from './Components/Discount';
+import React from 'react';
+import Homepage from './Components/Homepage'
+import Prorata from './Components/Prorata';
 
-function App() {
+import Test from './Components/Test';
+
+const App = () => {
+
+
   return (
-    <div className="App">
-      <Discount />
+    <div>
+     <Homepage />
+
     </div>
+
   );
 }
 

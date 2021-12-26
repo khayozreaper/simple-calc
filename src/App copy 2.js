@@ -1,23 +1,23 @@
 
-import Navbar from './Navbar';
+import Homepage from './Components/Homepage';
+import Navbar from './Components/Navbar';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Prorata from './Prorata';
-import Welcome from './Welcome';
-function Homepage() {
+import Prorata from './Components/Prorata';
+function App() {
   return (
     <Router>
-      <div className="Homepage">
+      <div className="App">
+        <Navbar />
         <div className="content">
           <Switch>
             <Route exact path="/">
-              <Welcome />
+              <Homepage />
             </Route>
             <Route path="/prorata">
               <Prorata /> 
             </Route>
           </Switch>
         </div>
-        <Navbar />
       </div>
     </Router>
 
@@ -25,4 +25,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default App;
