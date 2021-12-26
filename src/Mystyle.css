@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
   margin: 0;
   
-  font-family: "Monda";
+  font-family: 'Pacifico', cursive;
   background: #000000;
   color: rgb(204, 204, 204);
 }

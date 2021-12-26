@@ -1,46 +1,48 @@
 import { useState } from "react";
 import ReactDOM from "react-dom";
-import "./Prorata.css";
+import "./TaxCalculate.css";
 
-function Prorata() {
-  const [number1, setNumber1] = useState();
-  const [number2, setNumber2] = useState();
-  const [number3, setNumber3] = useState();
-  const [number4, setNumber4] = useState();
-  const [total, setTotal] = useState(number1);
+function Taxcalculate() {
+  const [orgicost, setOrgicost] = useState();
+  const [gst, setGst] = useState();
+  const [amount, setAmount] = useState();
+  
 
-  function calculateTotal() {
-    const number4 = Math.round((number2/number3 )*100)
-    setTotal(number1 - (number1 * (1-(number4)/100)));
+  const [total, setTotal] = useState();
+
+  function calculateAftertax() {
+   
+    setTotal((orgicost*(gst/100))+(orgicost));
+ 
+  }
+  function calculateBeforetax() {
+   
+    setTotal((orgicost*(100/(100+(gst)))));
  
   }
 
   return (
-    <div className="Prorata">
-      <h1>Calulate Prorata !</h1>
+    <div className="Taxcalculate">
+      <h1>Calulate Taxcalculate !</h1>
 
       <div className="number-inputs">
         <input
           type="number"
-          value={number1}
-          onChange={(e) => setNumber1(+e.target.value)}
+          value={orgicost}
+          onChange={(e) => setOrgicost(+e.target.value)}
           placeholder="Rate"
         />
         <input
           type="number"
-          value={number2}
-          onChange={(e) => setNumber2(+e.target.value)}
+          value={gst}
+          onChange={(e) => setGst(+e.target.value)}
           placeholder="Month"
         />
-        <input
-          type="number"
-          value={number3}
-          onChange={(e) => setNumber3(+e.target.value)}
-          placeholder="Warranty"
-        />
+      
       </div>
 
-      <button onClick={calculateTotal}>Calculate!</button>
+      <button onClick={calculateBeforetax}>Before Tax!</button>
+      <button onClick={calculateAftertax}>After Tax!</button>
 
       <h2>{total}</h2>
     </div>
@@ -48,6 +50,6 @@ function Prorata() {
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<Prorata />, rootElement);
+ReactDOM.render(<Taxcalculate />, rootElement);
 
-export default Prorata
+export default Taxcalculate
