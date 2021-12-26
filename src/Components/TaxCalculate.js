@@ -23,7 +23,7 @@ function Taxcalculate() {
 
   return (
     <div className="Taxcalculate">
-      <h1>Calulate Taxcalculate !</h1>
+      <h1>Calulate Tax !</h1>
 
       <div className="number-inputs">
         <input
@@ -36,12 +36,12 @@ function Taxcalculate() {
           type="number"
           value={gst}
           onChange={(e) => setGst(+e.target.value)}
-          placeholder="Month"
+          placeholder="Tax"
         />
       
       </div>
 
-      <button onClick={calculateBeforetax}>Before Tax!</button>
+     <button onClick={calculateBeforetax}>Before Tax!</button>
       <button onClick={calculateAftertax}>After Tax!</button>
 
       <h2>{total}</h2>

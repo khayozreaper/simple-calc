@@ -5,9 +5,9 @@
   }
   
   .Taxcalculate {
-    font-family: sans-serif;
+   
     text-align: center;
-    padding-top: 0%;
+    padding-top: 01px;
     
     background: #000000;
     min-height: 100vh;
@@ -15,7 +15,7 @@
   }
   
   h1 {
-    margin-bottom: 50px;
+    margin-bottom: 1px;
   }
   
   .number-inputs {
@@ -23,11 +23,12 @@
   }
   
   input {
-    font-size: 50px;
+    font-size: 25px;
     border-radius: 50px;
     border: 1px solid #000000;
     width: 75%;
     padding: 10px;
+    margin-bottom: 3%;
     text-align: center;
     background: 	#282828;
     color: #FFFFFF;
@@ -37,21 +38,25 @@
     margin-right: 20px;
   }
   
+  
   button {
-    padding: 20px 50px;
-    font-size: 30px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    padding: 10px 25px;
+    font-size: 20px;
     border-bottom-left-radius: 75px;
     border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
     background: 	#808080;
     border: none;
-    margin-bottom: 60px;
     color: #F5F5F5;
     cursor: pointer;
+    
   }
+ 
+    
+  
   
   h2 {
-    font-size:75px;
+    font-size:45px;
   }
   

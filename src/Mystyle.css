@@ -3,13 +3,14 @@
 * {
   margin: 0;
   
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico';
   background: #000000;
   color: rgb(204, 204, 204);
 }
 .navbar {
   padding: 10px;
   display: flex;
+  
   align-items: center;
   max-width: 100%;
   margin: 0 auto;
