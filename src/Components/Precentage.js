@@ -6,12 +6,14 @@ function Precentage() {
   const [number2, setNumber2] = useState();
   const [number3, setNumber3] = useState();
 
-  const [total, setTotal] = useState(number1);
+
+  const [total , setTotal] = useState(number1);
 
   function calculateTotal() {
-    const number3 = Math.round((number1/number2 )*1000)
-    setTotal(100 - (100 * (1-(number3)/1000)));
- 
+    const number3 = Math.round((number1 / number2) * 1000)
+
+    setTotal(100 - (100 * (1 - (number3) / 1000)));
+
   }
 
   return (
@@ -23,20 +25,20 @@ function Precentage() {
           type="number"
           value={number1}
           onChange={(e) => setNumber1(+e.target.value)}
-          placeholder="Rate"
+          placeholder="Number"
         />
         <input
           type="number"
           value={number2}
           onChange={(e) => setNumber2(+e.target.value)}
-          placeholder="Month"
+          placeholder="Out-of"
         />
-       
+
       </div>
 
       <button onClick={calculateTotal}>Calculate!</button>
 
-      <h2>{total}</h2>
+      <h2 >{total}  </h2>
     </div>
   );
 }

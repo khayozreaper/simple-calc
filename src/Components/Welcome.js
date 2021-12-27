@@ -8,6 +8,7 @@ const Welcome = () => {
                
                <Link to="/prorata" >Prorata</Link>
                <div><Link to="/tax" >Tax</Link></div> 
+               <div><Link to="/precent" >Precentage</Link></div> 
              </div>
           
         </nav>
