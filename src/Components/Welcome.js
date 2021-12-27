@@ -7,10 +7,9 @@ const Welcome = () => {
             <div className="links">
                
                <Link to="/prorata" >Prorata</Link>
-               
-              
-            </div>
-           <div><Link to="/tax" >Tax</Link></div> 
+               <div><Link to="/tax" >Tax</Link></div> 
+             </div>
+          
         </nav>
     );
 }
