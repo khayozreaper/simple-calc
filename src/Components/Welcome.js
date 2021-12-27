@@ -4,12 +4,13 @@ const Welcome = () => {
     return (  
         <nav className="welcome">
             <h1>Menu</h1>
-            <div className="links">
+          
                
-               <Link to="/prorata" >Prorata</Link>
+               <div><Link to="/prorata" >Prorata</Link></div>
                <div><Link to="/tax" >Tax</Link></div> 
-               <div><Link to="/precent" >Precentage</Link></div> 
-             </div>
+              
+               <div><Link to="/discount" >Discount</Link></div> 
+            
           
         </nav>
     );

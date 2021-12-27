@@ -5,10 +5,12 @@ import Prorata from './Prorata';
 import Welcome from './Welcome';
 import Taxcalculate from './TaxCalculate';
 import Precentage from './Precentage';
+import Discount from './Discount';
 function Homepage() {
   return (
     <Router>
       <div className="Homepage">
+      <Navbar />
         <div className="content">
           <Switch>
             <Route exact path="/">
@@ -21,12 +23,13 @@ function Homepage() {
             <Route path="/tax">
               <Taxcalculate />
             </Route>
-            <Route path="/precent">
-              <Precentage />
+           
+            <Route path="/discount">
+              <Discount />
             </Route>
           </Switch>
         </div>
-        <Navbar />
+      
       </div>
     </Router>
 
