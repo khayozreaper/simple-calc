@@ -4,9 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Prorata from './Prorata';
 import Welcome from './Welcome';
 import Taxcalculate from './TaxCalculate';
-import Precentage from './Precentage';
 import Discount from './Discount';
-import Notecount from './Notecount';
+
 function Homepage() {
   return (
     <Router>
@@ -29,9 +28,7 @@ function Homepage() {
               <Discount />
             </Route>
          
-            <Route path="/cashcount">
-              <Notecount />
-            </Route>
+           
           </Switch>
         </div>
       
