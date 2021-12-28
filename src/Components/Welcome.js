@@ -10,6 +10,7 @@ const Welcome = () => {
                <div><Link to="/tax" >Tax</Link></div> 
               
                <div><Link to="/discount" >Discount</Link></div> 
+               <div><Link to="/cashcount" >Count Cash</Link></div> 
             
           
         </nav>

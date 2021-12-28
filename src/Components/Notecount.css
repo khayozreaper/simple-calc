@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  
+}
+
+
+
+.number-inputs {
+  margin-bottom: 20px;
+}
+
+input {
+  font-size: 20px;
+  border-radius: 25px;
+  border: 1px solid #474747;
+  width: 30%;
+  
+  text-align: center;
+  background: 	#282828;
+  color: #FFFFFF;
+  
+  
+}
+
+label{
+
+  color: #FFFFFF;
+
+}

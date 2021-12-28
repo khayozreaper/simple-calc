@@ -6,6 +6,7 @@ import Welcome from './Welcome';
 import Taxcalculate from './TaxCalculate';
 import Precentage from './Precentage';
 import Discount from './Discount';
+import Notecount from './Notecount';
 function Homepage() {
   return (
     <Router>
@@ -26,6 +27,10 @@ function Homepage() {
            
             <Route path="/discount">
               <Discount />
+            </Route>
+         
+            <Route path="/cashcount">
+              <Notecount />
             </Route>
           </Switch>
         </div>
