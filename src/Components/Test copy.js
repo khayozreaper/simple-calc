@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 class Test extends React.Component {
     state = {
       result: 0,
-      num1: 2000,
+      num1: 0,
       num2: 0
     };
   
@@ -12,7 +12,7 @@ class Test extends React.Component {
       const num1 = Number(evt.target.value);
       this.setState(prevState => ({
         num1,
-        result: num1 * prevState.num2
+        result: num1 + prevState.num2
       }));
     };
   
@@ -20,21 +20,20 @@ class Test extends React.Component {
       const num2 = Number(evt.target.value);
       this.setState(prevState => ({
         num2,
-        result: prevState.num1 * num2
+        result: prevState.num1 + num2
       }));
     };
     
   
     render() {
       return (
-      <div className="test">
-          <form>
+        <form>
           <label>
             <input
               type="number"
               name="num1"
               value={this.state.num1}
-              onChange={this.handlenum1Change} readOnly
+              onChange={this.handlenum1Change}
             />
             <input
               type="number"
@@ -45,7 +44,6 @@ class Test extends React.Component {
             <input type="text" value={this.state.result} readOnly />
           </label>
         </form>
-      </div>
       );
     }
   }

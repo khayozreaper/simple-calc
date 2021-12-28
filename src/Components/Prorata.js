@@ -6,13 +6,14 @@ function Prorata() {
   const [number1, setNumber1] = useState();
   const [number2, setNumber2] = useState();
   const [number3, setNumber3] = useState();
-  const [number4, setNumber4] = useState();
-  const [total, setTotal] = useState(number1);
+ 
+  const [total, setTotal] = useState();
+  const [discount, setDiscount] = useState();
 
   function calculateTotal() {
     const number4 = Math.round((number2/number3 )*100)
     setTotal(number1 - (number1 * (1-(number4)/100)));
- 
+    setDiscount( Math.round((1-(number2/number3 ))*100));
   }
 
   return (
@@ -43,6 +44,7 @@ function Prorata() {
       <button onClick={calculateTotal}>Calculate!</button>
 
       <h2>{total}</h2>
+      <div>Discount : {discount} %</div>
     </div>
   );
 }
