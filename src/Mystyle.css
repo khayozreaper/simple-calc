@@ -23,6 +23,10 @@
 .navbar .links {
   margin-left: auto;
 }
+.logo{
+  height: 25%;
+  width: 25%;
+}
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
@@ -40,9 +44,8 @@
 }
 .welcome{
   
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+  
   max-width: 100%;
   margin: 0 auto;
   font-size: 150%;

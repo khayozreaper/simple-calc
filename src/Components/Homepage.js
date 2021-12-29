@@ -5,6 +5,7 @@ import Prorata from './Prorata';
 import Welcome from './Welcome';
 import Taxcalculate from './TaxCalculate';
 import Discount from './Discount';
+import Notecount from './Notecount';
 
 function Homepage() {
   return (
@@ -26,6 +27,9 @@ function Homepage() {
            
             <Route path="/discount">
               <Discount />
+            </Route>
+            <Route path="/cashcount">
+              <Notecount />
             </Route>
          
            
