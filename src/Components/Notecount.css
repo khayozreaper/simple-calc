@@ -12,7 +12,11 @@
 .number-inputs {
   margin-bottom: 20px;
 }
-h1,
+h1{
+  width: 100%;
+}
+  
+
 input {
   
   border-radius: 50px;
