@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import ReactDOM from "react-dom";
-import "./Prorata.css";
+import "./Prorata.module.css";
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 function Prorata() {

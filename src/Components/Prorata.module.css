@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
   }
@@ -56,7 +56,7 @@
     border-bottom-right-radius: 75px;
     background: 	#808080;
     border: none;
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 60px;
     color: #F5F5F5;
     cursor: pointer;
