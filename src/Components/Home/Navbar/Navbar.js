@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom'
 import React from 'react';
-import amaron from '../img/nav logo.png';
+import amaron from '../../../img/nav logo.png';
+import './Navbar.css'
 const Navbar = () => {
     return (  
         

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import ReactDOM from "react-dom";
-import "./Notecount.css";
+import "./Notecount.module.css";
 class Notecount extends React.Component {
 
   state = {

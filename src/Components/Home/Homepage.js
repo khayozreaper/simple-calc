@@ -1,11 +1,11 @@
 
-import Navbar from './Navbar';
+import Navbar from './Navbar/Navbar';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Prorata from './Prorata';
+import Prorata from '../Mod1/Prorata'
 import Welcome from './Welcome';
-import Taxcalculate from './TaxCalculate';
-import Discount from './Discount';
-import Notecount from './Notecount';
+import Taxcalculate from '../Mod1/TaxCalculate';
+import Discount from '../Mod1/Discount';
+import Notecount from '../Mod2/Notecount';
 
 function Homepage() {
   return (
