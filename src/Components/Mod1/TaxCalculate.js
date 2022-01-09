@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ReactDOM from "react-dom";
-import "./TaxCalculate.module.css";
+import './styleset1.css';
+
 
 function Taxcalculate() {
   const [orgicost, setOrgicost] = useState();

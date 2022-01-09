@@ -9,11 +9,6 @@ function Prorata() {
   const [selectedDate, setSelecetedDate] = useState(null)
   const [selectedDate2, setSelecetedDate2] = useState(new Date())
   const [month, setMonth] = useState()
-  const [month2, setMonth2] = useState()
-  const [month3, setMonth3] = useState()
-  const [output, setOutput] = useState()
-  const [output2, setOutput2] = useState()
-
 
 
   const [number1, setNumber1] = useState();
@@ -23,20 +18,6 @@ function Prorata() {
   const [discount, setDiscount] = useState();
 
   function calculateTotal() {
-
-
-    // const number2 = ((selectedDate2 - selectedDate) / ((100 * 60 * 60 * 24 * 30) * 10));
-
-    // const number4 = Math.round((number2 / number3) * 100)
-    // setTotal(number1 - (number1 * (1 - (number4) / 100)));
-    // setDiscount(Math.round((1 - (number2 / number3)) * 100));
-
-
-  }
-  const handleClick = () => {
-
-    setMonth(Math.round((selectedDate2 - selectedDate) / ((100 * 60 * 60 * 24 * 30) * 10)));
-
     const number2 = ((selectedDate2 - selectedDate) / ((100 * 60 * 60 * 24 * 30) * 10));
 
     const number4 = Math.round((number2 / number3) * 100)
@@ -44,16 +25,10 @@ function Prorata() {
     setDiscount(Math.round((1 - (number2 / number3)) * 100));
 
 
-    setOutput('Discount is :');
-    setOutput2('%');
-    setMonth2('Battery has Lasted ')
-    setMonth3('Months ')
-
   }
 
-
   function calculateMonth() {
-    // setMonth(Math.round((selectedDate2 - selectedDate) / ((100 * 60 * 60 * 24 * 30) * 10)));
+    setMonth(Math.round((selectedDate2 - selectedDate) / ((100 * 60 * 60 * 24 * 30) * 10)));
 
   }
 
@@ -86,7 +61,7 @@ function Prorata() {
 
         />
 
-        <h3>{month2} {month} {month3}  </h3>
+        <h3>Battery has lasted {month} Months  </h3>
 
       </div>
 
@@ -123,10 +98,10 @@ function Prorata() {
       </div>
       <br />
 
-      <button onClick={handleClick} onBeforeInput={calculateMonth}>Calculate!</button>
+      <button onClick={calculateTotal} onBeforeInput={calculateMonth}>Calculate!</button>
 
       <h2>{total}</h2>
-      <div> {output} {discount} {output2} </div>
+      <div>Discount : {discount} %</div>
     </div>
   );
 }

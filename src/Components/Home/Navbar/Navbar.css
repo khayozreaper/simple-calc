@@ -13,7 +13,10 @@
   max-width: 100%;
   margin: 0 auto;
  
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #000000;
+  border-radius: 100px;
+  border-width: 3px;
+  
 }
 .navbar h1 {
   color: #ffffff;
@@ -22,8 +25,8 @@
   margin-left: auto;
 }
 .logo{
-  height: 25%;
-  width: 25%;
+  height: 30%;
+  width: 30%;
 }
 .navbar a {
   margin-left: 16px;
@@ -34,18 +37,20 @@
 
 
 
-.navbar a:hover {
-  color: #00FFFF;
+.navbar a:hover  {
+  color: cyan;
+  
 }
 .welcome a:hover{
   color: cyan;
 }
 .welcome{
   
-
+  display: flex;
+  justify-content:space-between;
   
   max-width: 100%;
-  margin: 0 auto;
+
   font-size: 150%;
   
 }

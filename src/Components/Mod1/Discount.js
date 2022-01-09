@@ -1,5 +1,7 @@
 import { useState } from "react";
 import ReactDOM from "react-dom";
+import './styleset1.css';
+
 
 function Discount() {
   const [number1, setNumber1] = useState();
