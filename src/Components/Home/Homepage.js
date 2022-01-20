@@ -5,7 +5,8 @@ import Prorata from '../Mod1/Prorata'
 import Welcome from './Welcome';
 import Taxcalculate from '../Mod1/TaxCalculate';
 import Discount from '../Mod1/Discount';
-import Notecount from '../Mod2/Notecount';
+import Notecount from '../Mod1/Notecount';
+
 
 function Homepage() {
   return (
@@ -31,6 +32,7 @@ function Homepage() {
             <Route path="/cashcount">
               <Notecount />
             </Route>
+           
          
            
           </Switch>

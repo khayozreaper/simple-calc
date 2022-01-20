@@ -27,6 +27,7 @@
 .logo{
   height: 30%;
   width: 30%;
+  
 }
 .navbar a {
   margin-left: 16px;
@@ -47,7 +48,7 @@
 .welcome{
   
   display: flex;
-  justify-content:space-between;
+  flex-direction: column;
   
   max-width: 100%;
 

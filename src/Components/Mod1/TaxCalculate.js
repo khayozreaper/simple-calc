@@ -6,22 +6,25 @@ import './styleset1.css';
 function Taxcalculate() {
   const [orgicost, setOrgicost] = useState();
   const [gst, setGst] = useState();
-  const [amount, setAmount] = useState();
+  const [output, setOutput] = useState();
   
 
   const [total, setTotal] = useState();
 
-  function calculateAftertax() {
-   
-    setTotal((orgicost*(gst/100))+(orgicost));
- 
-  }
-  function calculateBeforetax() {
-   
-    setTotal((orgicost*(100/(100+(gst)))));
- 
-  }
+  
+  const handleClick1 = () => {
 
+   setTotal((orgicost*(100/(100+(gst)))));
+    
+    setOutput('Before Tax:  ')
+
+  }
+  const handleClick2 = () => {
+
+     setTotal((orgicost*(gst/100))+(orgicost));
+
+    setOutput('After TAx:  ')
+  }
   return (
     <div className="Taxcalculate">
       <h1>Calulate Tax !</h1>
@@ -42,10 +45,10 @@ function Taxcalculate() {
       
       </div>
 
-     <button onClick={calculateBeforetax}>Before Tax!</button>
-      <button onClick={calculateAftertax}>After Tax!</button>
+     <button onClick={handleClick1}>Before Tax!</button>
+      <button onClick={handleClick2}>After Tax!</button>
 
-      <h2>{total}</h2>
+      <h2>{output+ total}</h2>
     </div>
   );
 }

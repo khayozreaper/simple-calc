@@ -10,13 +10,13 @@ const Navbar = () => {
         
             {/* <img src={amaron}   className="logo" alt= "Amaron Pitstop Kzm.logo" /> */}
             <Link to="/" >
-            <img src={amaron}   className="logo" alt= "Amaron Pitstop Kzm.logo" />
+            <img src={amaron}    className="logo" alt= "Amaron Pitstop Kzm.logo" />
 
             </Link>
             <div className="links">
                <Link to="/" >Home</Link>
             </div>
-            
+           
         </nav>
         
     );
