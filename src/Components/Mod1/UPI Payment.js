@@ -1,11 +1,18 @@
 import React from "react";
 
-import welcome from '../../img/welcome.png'
-const upiPayment = () => {
-    return (
-        <img src={welcome} className="logo" alt="Amaron Pitstop Kzm.logo" />
+import  qrcode from '../../img/qrcode.svg'
 
+const UpiPayment = () => {
+    return (
+<div className="Upipayment">
+<img src={qrcode} className="svg" alt="upipayment.svg"
+width="100%" 
+height="100%"
+objectFit="contain"
+/>
+
+</div>
     );
 }
 
-export default upiPayment;
+export default UpiPayment;

@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 
 const Welcome = () => {
     return (  
-        <nav className="welcome">
+        <div className="welcome">
            
           
                
@@ -11,10 +11,11 @@ const Welcome = () => {
               
                <div><Link to="/discount" >Discount</Link></div> 
                <div><Link to="/cashcount" >Cash Counter</Link></div> 
+               <div><Link to="/upipay" >UPI Pay</Link></div> 
              
             
           
-        </nav>
+        </div>
     );
 }
  export default Welcome
