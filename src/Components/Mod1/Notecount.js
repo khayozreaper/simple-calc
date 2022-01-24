@@ -60,7 +60,8 @@ class Notecount extends React.Component {
       num1,
       result1: num1 * prevState.numr1,
       nresult: num1 + prevState.num2 + prevState.num3 + prevState.num4 + prevState.num5 + prevState.num6 + prevState.num7,
-      fnresult: (num1 * prevState.numr1) + prevState.result2 + prevState.result3 + prevState.result4 + prevState.result5 + prevState.result6 + prevState.result7
+      fnresult: (num1 * prevState.numr1) + prevState.result2 + prevState.result3 + prevState.result4 + prevState.result5 + prevState.result6 + prevState.result7,
+      
     }));
   };
   //500
@@ -168,7 +169,7 @@ class Notecount extends React.Component {
           {/* 2000 START */}
           <div><h1>Notes</h1></div>
           
-          <label 
+          <div 
          
           >
             <input
@@ -177,16 +178,10 @@ class Notecount extends React.Component {
               value={this.state.num1}
               onChange={this.handlenum1Change}
             />
-            <input
-              type="number"
-              name="numr1"
-              readOnly
-              placeholder="× 2000 ="
-            />
-            <input type="text" value={this.state.result1} readOnly />
+          × 2000 = {this.state.result1} 
             {/* 2000 END */}
-          </label> <br />
-          <label>
+          </div> <br />
+          <div>
             {/* 500 START */}
             <input
               type="number"
@@ -194,17 +189,10 @@ class Notecount extends React.Component {
               value={this.state.num2}
               onChange={this.handlenum2Change}
             />
-            <input
-              type="number"
-              name="numr2"
-              readOnly
-              placeholder="× 500 ="
-
-            />
-            <input type="text" value={this.state.result2} readOnly />
+            × 500 ={this.state.result2}
             {/* 500 END */}
-          </label> <br />
-          <label>
+          </div> <br />
+          <div>
             {/* 200 START */}
             <input
               type="number"
@@ -212,17 +200,10 @@ class Notecount extends React.Component {
               value={this.state.num3}
               onChange={this.handlenum3Change}
             />
-            <input
-              type="number"
-              name="numr3"
-              readOnly
-              placeholder="× 200 ="
-
-            />
-            <input type="text" value={this.state.result3} readOnly />
+            × 200 ={this.state.result3} 
             {/* 200 END */}
-          </label> <br />
-          <label>
+          </div> <br />
+          <div>
             {/* 100 START */}
             <input
               type="number"
@@ -230,17 +211,11 @@ class Notecount extends React.Component {
               value={this.state.num4}
               onChange={this.handlenum4Change}
             />
-            <input
-              type="number"
-              name="numr4"
-              readOnly
-              placeholder="× 100 ="
-
-            />
-            <input type="text" value={this.state.result4} readOnly />
+            
+            × 100 ={this.state.result4} 
             {/* 100 END */}
-          </label> <br />
-          <label>
+          </div> <br />
+          <div>
             {/* 50 START */}
             <input
               type="number"
@@ -248,17 +223,10 @@ class Notecount extends React.Component {
               value={this.state.num5}
               onChange={this.handlenum5Change}
             />
-            <input
-              type="number"
-              name="numr5"
-              readOnly
-              placeholder="× 50 ="
-
-            />
-            <input type="text" value={this.state.result5} readOnly />
+           × 50 ={this.state.result5}
             {/* 50 END */}
-          </label> <br />
-          <label>
+          </div> <br />
+          <div>
             {/* 20 START */}
             <input
               type="number"
@@ -266,18 +234,11 @@ class Notecount extends React.Component {
               value={this.state.num6}
               onChange={this.handlenum6Change}
             />
-            <input
-              type="number"
-              name="numr6"
-              readOnly
-              placeholder="× 20 ="
-
-            />
-            <input type="text" value={this.state.result6} readOnly />
+           × 20 ={this.state.result6}
             {/* 20 END */}
-          </label> <br />
+          </div> <br />
 
-          <label>
+          <div>
             {/* 10 START */}
             <input
               type="number"
@@ -285,30 +246,23 @@ class Notecount extends React.Component {
               value={this.state.num7}
               onChange={this.handlenum7Change}
             />
-            <input
-              type="number"
-              name="numr7"
-              readOnly
-              placeholder="× 10 ="
-
-            />
-            <input type="text" value={this.state.result7} readOnly />
+           × 10 ={this.state.result7} 
             {/* 10 END */}
-          </label> <br />
+          </div> <br />
 
           <br />
 
 
 
           <br />
-          <div> <label> Total Notes <input type="text" value={this.state.nresult} readOnly /> </label> <br /></div>
+          <div> <h3> Total Note {this.state.nresult}</h3> </div> 
           <br />
 
-          <div> <label> Total Amount <input type="text" value={this.state.fnresult} readOnly /> </label> <br /></div>
+          <div> <h3> Total Amount {this.state.fnresult}</h3></div>  
 
 
           <div><h1>Coins</h1></div>
-          <label>
+          <div>
             {/* 5 START */}
             <input
               type="number"
@@ -316,18 +270,11 @@ class Notecount extends React.Component {
               value={this.state.num8}
               onChange={this.handlenum8Change}
             />
-            <input
-              type="number"
-              name="numr8"
-              readOnly
-              placeholder="× 5 ="
-
-            />
-            <input type="text" value={this.state.result8} readOnly />
+            × 5 = {this.state.result8}
             {/* 5 END */}
-          </label> <br />
+          </div> <br />
 
-          <label>
+          <div>
             {/* 2 START */}
             <input
               type="number"
@@ -335,18 +282,11 @@ class Notecount extends React.Component {
               value={this.state.num9}
               onChange={this.handlenum9Change}
             />
-            <input
-              type="number"
-              name="numr9"
-              readOnly
-              placeholder="× 2 ="
-
-            />
-            <input type="text" value={this.state.result9} readOnly />
+           × 2 ={this.state.result9}
             {/* 2 END */}
-          </label> <br />
+          </div> <br />
 
-          <label>
+          <div>
             {/* 1 START */}
             <input
               type="number"
@@ -354,15 +294,7 @@ class Notecount extends React.Component {
               value={this.state.num10}
               onChange={this.handlenum10Change}
             />
-            <input
-              type="number"
-              name="numr10"
-              readOnly
-              placeholder="× 1 ="
-
-
-            />
-            <input type="text" value={this.state.result10} readOnly />
+            × 1 ={this.state.result10} 
             {/* 1 END */}
 
             <br />
@@ -370,11 +302,11 @@ class Notecount extends React.Component {
 
 
             <br />
-            <div> <label> Total Coins<input type="text" value={this.state.cresult} readOnly /> </label> <br /></div>
+            <div> <h3> Total Coins {this.state.cresult}</h3> </div>
             <br />
 
-            <div> <label> Total Amount <input type="text" value={this.state.fcresult} readOnly /> </label> <br /></div>
-          </label>
+            <div> <h3> Total Amount {this.state.fcresult} </h3> </div>
+          </div>
         </div>
       </form>
 
