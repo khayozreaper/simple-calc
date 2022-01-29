@@ -1,17 +1,12 @@
-import React from 'react';
-import Homepage from './Components/Home/Homepage'
-
+import React from "react";
+import Homepage from "./Components/Navi/Homepage";
 
 const App = () => {
-
-
   return (
     <div>
-     <Homepage />
-    {/* <Test /> */}
+      <Homepage />
     </div>
-
   );
-}
+};
 
 export default App;

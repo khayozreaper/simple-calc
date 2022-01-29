@@ -1,13 +1,12 @@
-
-import Navbar from './Navbar/Navbar';
+import Navbar from "./topNavbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Prorata from '../Mod1/Prorata'
-import Welcome from './Welcome';
-import Taxcalculate from '../Mod1/TaxCalculate';
-import Discount from '../Mod1/Discount';
-import Notecount from '../Mod1/Notecount';
-import UpiPayment from '../Mod1/UPI Payment';
-
+import Prorata from "../Mod1/Prorata";
+import Welcome from "./Welcome";
+import Taxcalculate from "../Mod1/TaxCalculate";
+import Discount from "../Mod1/Discount";
+import Notecount from "../Mod1/Notecount";
+import UpiPayment from "../Mod1/UPI Payment";
+import LowNavbar from "./lowNavbar";
 
 function Homepage() {
   return (
@@ -37,16 +36,11 @@ function Homepage() {
             <Route path="/upipay">
               <UpiPayment />
             </Route>
-
-
-
           </Switch>
         </div>
-
+        <LowNavbar />
       </div>
     </Router>
-
-
   );
 }
 
